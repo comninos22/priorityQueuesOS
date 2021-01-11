@@ -94,7 +94,7 @@ public class Controller implements Initializable {
     void start(ActionEvent event) {
 
         try {
-            MLQScheduler scheduler = new MLQScheduler(toBeExecutedProcesses, Integer.parseInt(quantumField.getText()));
+            PriorityQueuesScheduler scheduler = new PriorityQueuesScheduler(toBeExecutedProcesses, Integer.parseInt(quantumField.getText()));
             LinkedList<Process> afterExecute = scheduler.executeProcesses();
             String tat = "average Turn Around Time: " + scheduler.averageTurnaroundTime();
             String wt = "average Waiting Time: " + scheduler.averageWaitingTime();
