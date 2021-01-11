@@ -15,6 +15,7 @@ import javafx.stage.Stage;
  *
  * @author CHRISTOS
  */
+
 public class priorityQueues extends Application {
     
     @Override
